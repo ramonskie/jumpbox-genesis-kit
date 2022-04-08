@@ -204,7 +204,7 @@ if [[ "$SKIP_DEPLOY" == "false" ]]; then
 
 fi
 
-if [[ "$SKIP_SMOKE_TESTS" == "false" ]]; then
+if [[ "$SKIP_SMOKE_TESTS" == "true" ]]; then
 	header "Validating addons..."
 	genesis "do" "${DEPLOY_ENV}" -- setup-cli -f
 	genesis "do" "${DEPLOY_ENV}" -- login
