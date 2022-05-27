@@ -1,4 +1,9 @@
 ---
+kit:
+  features:
+    - ((append))
+    - openvpn
+
 genesis:
   env:   ci-gcp-upgrade
 

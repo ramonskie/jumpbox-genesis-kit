@@ -1,9 +1,4 @@
 ---
-kit:
-  features:
-    - ((append))
-    - small-footprint
-
 genesis:
   env:   ci-vsphere-baseline
 

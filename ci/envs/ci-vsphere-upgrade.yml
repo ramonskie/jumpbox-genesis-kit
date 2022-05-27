@@ -2,7 +2,7 @@
 kit:
   features:
     - ((append))
-    - small-footprint
+    - openvpn
 
 genesis:
   env:   ci-vsphere-upgrade
