@@ -14,6 +14,13 @@ params:
   availability_zones: [z1]
   haproxy_ips:        [ (( concat meta._ip_prefix "9.10" )) ]
   haproxy_ips:        [10.128.9.10]
+  vpn_client_routes:
+    - 10.0.0.0 255.255.248.0
+  vpn_dns_servers:
+    - 8.8.8.8
+    - 8.8.4.4
+  vpn_iptables_forward:
+    - -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
 
   users:
     - name: test-user
