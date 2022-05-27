@@ -41,3 +41,9 @@ params:
       shell: /bin/bash
       ssh_keys:
         - (( vault "secret/ci/baseline/jumpbox/test-user:public" ))
+
+instance_groups:
+  - name: jumpbox
+    networks:
+      - name: (( grab params.jumpbox_network || "jumpbox"))
+        static_ips: (( static_ips 1 ))
