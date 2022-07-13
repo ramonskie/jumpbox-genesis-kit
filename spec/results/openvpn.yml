@@ -82,7 +82,7 @@ releases:
   version: 3.7.0
 - name: openvpn
   version: 5.8.1
-  url: https://github.com/starkandwayne/openvpn-bosh-release?v=5.8.1
+  url: https://github.com/starkandwayne/openvpn-bosh-release/releases/download/v5.8.1/openvpn-5.8.1.tar.gz
   sha1: b74b462b7c218e94f5539d52cdec9179af96e89e
 - name: networking
   sha1: 9b5f9d27917c3754e492470ac6c9af80d62963db
